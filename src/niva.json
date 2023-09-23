@@ -1,0 +1,12 @@
+{
+    "name": "dist",
+    "uuid": "b9296f29-fd2c-4b9e-855b-d2c25ba6c3cc",
+    "window": {
+        "devtools": true,
+        "size": {
+            "width": 1100,
+            "height": 600
+        },
+        "resizable": true
+    }
+}
