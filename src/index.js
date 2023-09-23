@@ -21,14 +21,11 @@ function getRandomArray(number) {
 
 console.log(getRandomArray(46));
 
-async function main() {
+async function main(row) {
     let data = await fetch('./student.json').then(response => response.json());
     /** @type {*} */
     let dom = document.querySelector('.mdui-table');
     console.log(dom.innerHTML);
-
-    /** @type {number} */
-    const row = data['eachRow'];
     /** @type {Array} */
     const student = data['students'];
     const lists = (() => {
@@ -61,7 +58,13 @@ async function main() {
 
 document.querySelector('#run')?.addEventListener('click', () => {
     try {
-        main();
+        mdui.prompt(
+            '每列的人数 (默认为8). 不能填的太离谱, 没写错误处理',
+            text => {
+                main(Number(text || 8));
+            },
+            () => {},
+        );
     } catch (e) {
         throw new Error(e);
     }
