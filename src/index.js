@@ -1,4 +1,5 @@
-/*!RandomSeatArranger - 基于mdui的纯前端自习辅助工具集.
+/*
+ * RandomSeatArranger - 随机座位表生成器
  * https://github.com/BovineBeta/RandomSeatArranger
  * Copyright (C) 2023 FBIK <fbik@fbik.top>
  * https://github.com/BovineBeta/RandomSeatArranger/blob/master/LICENSE
